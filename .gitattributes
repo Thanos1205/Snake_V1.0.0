@@ -1,0 +1,19 @@
+# Force text files to use LF in the repo, Git will convert on checkout if needed
+* text=auto eol=lf
+
+# Binary files should be treated as binary (no line ending conversion)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.psd binary
+*.wav binary
+*.mp3 binary
+*.ogg binary
+*.ttf binary
+*.fbx binary
+*.anim binary
+*.prefab binary
+*.unity binary
+*.asset binary
+*.dll binary
+*.exe binary
