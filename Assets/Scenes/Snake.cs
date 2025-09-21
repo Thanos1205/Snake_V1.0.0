@@ -1,9 +1,30 @@
-// Snake does not increase in size
-// Snake does not speed up when eating fruit
-// Snake can reverse direction instantly
-// Snake becomes slower for 10 seconds
-// Snake can move through itself for 10 seconds
-// Snake can move through (inner) walls for 10 seconds (needs to make outer walls first)
+// Tobi: set highscore in relation to scale of monitor (UI scaling)
+// Tobi: improve highscore system (save multiple highscores, names, dates, etc.)
+
+
+// Features / Power-Ups / Debuffs:
+//      Snake does not increase in size
+//      Snake does not speed up when eating fruit
+//      Snake can reverse direction instantly
+//      Snake becomes slower for 10 seconds
+
+//      Snake can move through itself for 10 seconds
+//      Snake can move through (inner) walls for 10 seconds (needs to make outer walls first)
+//      Snake enters from other side when hitting wall
+
+//      inceases score by 2 for a short time when eating fruit
+//      increase score by 3
+
+//      add second snake
+//      position from fruit becomes blocked (see blue prefab) after eating it
+
+// add sounds
+// add music
+// add particle effects
+// add textures
+// add menu
+// add pause functionality
+
 
 using System.Collections;
 using System.Collections.Generic;
@@ -22,7 +43,7 @@ public class Snake : MonoBehaviour
     private Queue<Vector2> inputQueue = new Queue<Vector2>(); // queue to store input directions
     private float moveTimer = 0f; // timer to track movement intervals
 
-    private const float initialMoveSpeed = 20f; // store initial speed in a variable
+    private const float initialMoveSpeed = 15f; // store initial speed in a variable
     private float moveSpeed; // current speed, can increase when eating fruit
 
     private List<Transform> segments = new List<Transform>(); // list of all segments including head
