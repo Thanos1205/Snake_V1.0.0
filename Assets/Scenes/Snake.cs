@@ -1,4 +1,3 @@
-// Tobi: set highscore in relation to scale of monitor (UI scaling)
 // Tobi: improve highscore system (save multiple highscores, names, dates, etc.)
 
 
@@ -22,8 +21,6 @@
 // add music
 // add particle effects
 // add textures
-// add menu
-// add pause functionality
 
 
 using System.Collections;
